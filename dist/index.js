@@ -78,7 +78,7 @@ function run() {
                 core.debug(regex.toString());
                 if (!regex.test(title)) {
                     core.debug("Regex " + regex + " failed with title " + title);
-                    core.info("Title Failed" + regex + title);
+                    core.info("Check Title" + regex + title);
                     core.setFailed("PullRequest title does not start with a Jira Issue key." + regex + title);
                     return [2 /*return*/];
                 }
